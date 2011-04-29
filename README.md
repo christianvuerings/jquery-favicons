@@ -13,7 +13,7 @@ Name of the CSS class
 URL of the service you want to use.
 `__URL__` will be replaced by the complete URL.
 `__DOMAIN__` will be replaced by the URL without `http://` or `https://`.
-(default: "http://g.etfv.co/__URL__")
+(default: "http://g.etfv.co/\_\_URL\_\_")
 
 ## Features
 * Chainable
