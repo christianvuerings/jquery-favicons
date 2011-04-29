@@ -12,13 +12,13 @@ Feel free to check out the [examples](http://christianv.github.com/jquery-favico
 ## Usage
 
 ```html
-<script src="https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.js"></script> 
+<script src="https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.min.js"></script> 
 <script> 
   $('a[href^="http://"]').favicons();
 </script>
 ```
 
-You can download the [JavaScript file](https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.js) locally and change the jQuery selector `a[href^="http://"]` to whatever you want.
+You can download the [complete](https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.js) or [minified](https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.min.js) version of the script locally. You're also able to change the jQuery selector `a[href^="http://"]` to whatever you want.
 
 
 ## Configuration
