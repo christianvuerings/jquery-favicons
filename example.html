@@ -16,24 +16,31 @@
       margin-right: 10px;
       color: #666;
       text-decoration: none;
-      display: inline;
     }
     .favicon2:hover {
       color: #333;
       text-decoration: underline;
     }
-    ul li {
-      list-style-type: none;
+
+    body {
+      margin: 1.0em;
+      background-color: #fff;
+      font-family: Helvetica, Arial, FreeSans, san-serif;
+      color: #000000;
     }
-    h2 {
-      clear: both;
-    }
+    h1 { font-size: 3.8em; color: #3908bc; margin-bottom: 3px; }
+    h1 .small { font-size: 0.4em; }
+    h1 a { text-decoration: none }
+    h2 { font-size: 1.5em; color: #3908bc; clear: both;}
+    h3 { text-align: center; color: #3908bc; }
+    a { color: #3908bc; }
+    ul li { list-style-type: none;}
   </style>
 
 </head>
 <body>
 
-  <h1>jquery.favicons.js examples </h1>
+  <h1>jQuery Favicons Examples </h1>
 
   <h2>Standard</h2>
   <ul id="css">
@@ -65,7 +72,12 @@
     <li><a href="http://www.google.com" id="service0">Google (default)</a></li>
     <li><a href="http://www.google.com" id="service1">Google (getfavicon.org)</a></li>
     <li><a href="http://www.google.com" id="service2">Google (google service)</a></li>
-  </ul>  
+  </ul>
+
+  <h2>Chaining</h2>
+  <ul>
+    <li><a href="http://www.google.com" id="chain0">Google</a></li>
+  </ul>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script>!window.jQuery && document.write('<script src="http://code.jquery.com/jquery-1.4.2.min.js"><\/script>');</script>
@@ -94,12 +106,16 @@
     $('#default5').favicons({
       'service': 'http://g.etfv.co/__URL__?defaulticon=http://www.google.com/favicon.ico'
     });
-    
+
     $('#service0').favicons();
     $('#service1').favicons({
       'service': 'http://www.getfavicon.org/?url=__DOMAIN__'
     });
     $('#service2').favicons({
+      'service': 'http://www.google.com/s2/u/0/favicons?domain=__DOMAIN__'
+    });
+    
+    $('#chain0').favicons({
       'service': 'http://www.google.com/s2/u/0/favicons?domain=__DOMAIN__'
     }).css('color', '#ff0000');
   </script>
