@@ -4,12 +4,24 @@
 
 Add favicons to anchor elements on your page
 
-## Config
+## Configuration
+
+The plugin accepts 1 argument, which is the config object.
+
+```javascript
+$('a').favicons({
+	'class': 'sakai-favicon',
+  'service': 'http://g.etfv.co/__URL__?defaulticon=http://www.google.com/favicon.ico'
+});
+```
+
 * `class`:
+
 Name of the CSS class
 (default: "favicon")
 
 * `service`:
+
 URL of the service you want to use.
 `__URL__` will be replaced by the complete URL.
 `__DOMAIN__` will be replaced by the URL without `http://` or `https://`.
