@@ -1,8 +1,25 @@
 # jQuery Favicons Plug-in
 
-Add favicons to anchor elements on your page
+Add favicons to anchor elements on your page.
+
+Feel free to check out the [examples](http://christianv.github.com/jquery-favicons/example.html).
 
 ![Preview of the plug-in](http://f.cl.ly/items/0Y3K3v1D3W2k0F412v0O/Screen%20shot%202011-04-29%20at%2015.32.16.png)
+
+## Requirements
+* [jQuery 1.3+](http://www.jquery.com)
+
+## Usage
+
+```html
+<script src="https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.js"></script> 
+<script> 
+  $('a[href^="http://"]').favicons();
+</script>
+```
+
+You can download the [JavaScript file](https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.js) locally and change the jQuery selector `a[href^="http://"]` to whatever you want.
+
 
 ## Configuration
 
