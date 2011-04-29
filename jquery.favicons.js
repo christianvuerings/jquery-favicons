@@ -4,7 +4,7 @@
  */
 jQuery.fn.favicons = function(config){
   var settings = jQuery.extend({
-    'class': 'favicon',
+    'classname': 'favicon',
     'service': 'http://g.etfv.co/__URL__'
   }, config);
 
@@ -12,6 +12,6 @@ jQuery.fn.favicons = function(config){
   return this.each(function(){
     var link = $(this);
     var url = settings.service.replace('__URL__' , link.attr('href')).replace('__DOMAIN__', link.attr('href').replace('http://','').replace('https://', ''));
-    link.css('background-image', 'url(' + url + ')').addClass(settings.class);
+    link.css('background-image', 'url(' + url + ')').addClass(settings.classname);
   });
 };
