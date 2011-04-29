@@ -68,7 +68,7 @@ $('a').favicons({
 Sites using this plug-in.
 Feel free to fork the project and send a pull request to add your site in here.
 
-[Christian Vuerings](http://denbuzze.com)
+* [Christian Vuerings](http://denbuzze.com)
 
 ## Inspiration
 * [http://andreaslagerkvist.com/jquery/favicons/](http://andreaslagerkvist.com/jquery/favicons/)
