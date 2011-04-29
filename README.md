@@ -21,7 +21,7 @@ $('a').favicons({
 * `service`: URL of the service you want to use.  
 (default: "http://g.etfv.co/\_\_URL\_\_")  
 `__URL__` will be replaced by the complete URL.  
-`__DOMAIN__` will be replaced by the URL without `http://` or `https://`.  
+`__DOMAIN__` will be replaced by the domain, which is the URL without `http://` or `https://`.  
 
 ## Features
 * Chainable
