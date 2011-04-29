@@ -10,12 +10,12 @@ The plugin accepts 1 argument, which is the config object.
 
 ```javascript
 $('a').favicons({
-  'class': 'sakai-favicon',
+  'classname': 'sakai-favicon',
   'service': 'http://g.etfv.co/__URL__?defaulticon=http://www.google.com/favicon.ico'
 });
 ```
 
-* `class`: Name of the CSS class  
+* `classname`: Name of the CSS class  
 (default: "favicon")
 
 * `service`: URL of the service you want to use.  
