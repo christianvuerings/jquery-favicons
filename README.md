@@ -15,21 +15,18 @@ $('a').favicons({
 });
 ```
 
-* `class`:
-
-Name of the CSS class
+* `class`:  
+Name of the CSS class  
 (default: "favicon")
 
 * `service`:
-
-URL of the service you want to use.
-`__URL__` will be replaced by the complete URL.
-`__DOMAIN__` will be replaced by the URL without `http://` or `https://`.
+URL of the service you want to use.  
+`__URL__` will be replaced by the complete URL.  
+`__DOMAIN__` will be replaced by the URL without `http://` or `https://`.  
 (default: "http://g.etfv.co/\_\_URL\_\_")
 
 ## Features
 * Chainable
-	
 ```javascript
 $('a').favicons().css('color', '#ff0000');
 ```
