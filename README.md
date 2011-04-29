@@ -18,7 +18,8 @@ Feel free to check out the [examples](http://christianv.github.com/jquery-favico
 </script>
 ```
 
-You can download the [complete](https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.js) or [minified](https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.min.js) version of the script locally.   You're also able to change the jQuery selector `a[href^="http://"]` to whatever you want.
+You can download the [complete](https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.js) or [minified](https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.min.js) version of the script locally.  
+You're also able to change the jQuery selector `a[href^="http://"]` to whatever you want.
 
 
 ## Configuration
