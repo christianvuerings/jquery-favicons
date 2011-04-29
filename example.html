@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>jquery.favicons.js examples</title>
+
+  <style type="text/css">
+    .favicon {
+      background: no-repeat;
+      padding-left: 20px;
+    }
+    ul li {
+      list-style-type: none;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>jquery.favicons.js examples </h1>
+
+  <h2 id="standard">Standard</h2>
+  <ul id="css">
+    <li><a href="http://google.com">Google</a></li>
+    <li><a href="http://twitter.com">Twitter</a></li>
+    <li><a href="http://facebook.com">Facebook</a></li>
+    <li><a href="test.html">Local URL</a></li>
+  </ul>
+
+  <h2>Default Images</h2>
+  <ul>
+    <li><a href="http://f.com" id="default0">Default (default)</a></li>
+    <li><a href="http://f.com" id="default1">Default 1 (color)</a></li>
+    <li><a href="http://f.com" id="default2">Default 2 (grey)</a></li>
+    <li><a href="http://f.com" id="default3">Default 3 (1px)</a></li>
+    <li><a href="http://f.com" id="default4">Default 4 (none)</a></li>
+    <li><a href="http://f.com" id="default5">Default 5 (google)</a></li>
+  </ul>
+
+  <h2>Different Services</h2>
+  <ul>
+    <li><a href="http://www.google.com" id="service0">Google (default)</a></li>
+    <li><a href="http://www.google.com" id="service1">Google (getfavicon.org)</a></li>
+    <li><a href="http://www.google.com" id="service2">Google (google service)</a></li>
+  </ul>  
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script>!window.jQuery && document.write('<script src="http://code.jquery.com/jquery-1.4.2.min.js"><\/script>');</script>
+
+  <script src="jquery.favicons.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    $('#css a[href^="http://"]').favicons();
+    $('#default0').favicons({
+      'service': 'http://g.etfv.co/__URL__'
+    });
+    $('#default1').favicons({
+      'service': 'http://g.etfv.co/__URL__?defaulticon=bluepng'
+    });
+    $('#default2').favicons({
+      'service': 'http://g.etfv.co/__URL__?defaulticon=lightpng'
+    });
+    $('#default3').favicons({
+      'service': 'http://g.etfv.co/__URL__?defaulticon=1pxgif'
+    });
+    $('#default4').favicons({
+      'service': 'http://g.etfv.co/__URL__?defaulticon=none'
+    });
+    $('#default5').favicons({
+      'service': 'http://g.etfv.co/__URL__?defaulticon=http://www.google.com/favicon.ico'
+    });
+    
+    $('#service0').favicons();
+    $('#service1').favicons({
+      'service': 'http://www.getfavicon.org/?url=__DOMAIN__'
+    });
+    $('#service2').favicons({
+      'service': 'http://www.google.com/s2/u/0/favicons?domain=__DOMAIN__'
+    }).css('color', '#ff0000');
+  </script>
+
+</body>
+</html>
