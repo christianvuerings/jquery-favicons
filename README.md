@@ -19,9 +19,9 @@ $('a').favicons({
 (default: "favicon")
 
 * `service`: URL of the service you want to use.  
+(default: "http://g.etfv.co/\_\_URL\_\_")  
 `__URL__` will be replaced by the complete URL.  
 `__DOMAIN__` will be replaced by the URL without `http://` or `https://`.  
-(default: "http://g.etfv.co/\_\_URL\_\_")
 
 ## Features
 * Chainable
@@ -47,5 +47,5 @@ $('a').favicons({
 ```
 
 ## Inspiration
-[http://andreaslagerkvist.com/jquery/favicons/](http://andreaslagerkvist.com/jquery/favicons/)
-[http://github.com/shuber/jquery-favicons](http://github.com/shuber/jquery-favicons)
+* [http://andreaslagerkvist.com/jquery/favicons/](http://andreaslagerkvist.com/jquery/favicons/)
+* [http://github.com/shuber/jquery-favicons](http://github.com/shuber/jquery-favicons)
