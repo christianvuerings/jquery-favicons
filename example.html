@@ -10,8 +10,23 @@
       background: no-repeat;
       padding-left: 20px;
     }
+    .favicon2 {
+      background: no-repeat;
+      padding-left: 18px;
+      margin-right: 10px;
+      color: #666;
+      text-decoration: none;
+      display: inline;
+    }
+    .favicon2:hover {
+      color: #333;
+      text-decoration: underline;
+    }
     ul li {
       list-style-type: none;
+    }
+    h2 {
+      clear: both;
     }
   </style>
 
@@ -20,7 +35,7 @@
 
   <h1>jquery.favicons.js examples </h1>
 
-  <h2 id="standard">Standard</h2>
+  <h2>Standard</h2>
   <ul id="css">
     <li><a href="http://google.com">Google</a></li>
     <li><a href="http://twitter.com">Twitter</a></li>
@@ -38,6 +53,13 @@
     <li><a href="http://f.com" id="default5">Default 5 (google)</a></li>
   </ul>
 
+  <h2>CSS Changes</h2>
+  <ul id="css2">
+    <li><a href="http://google.com">Google</a></li>
+    <li><a href="http://twitter.com">Twitter</a></li>
+    <li><a href="http://facebook.com">Facebook</a></li>
+  </ul>
+
   <h2>Different Services</h2>
   <ul>
     <li><a href="http://www.google.com" id="service0">Google (default)</a></li>
@@ -51,6 +73,9 @@
   <script src="https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.js" type="text/javascript" charset="utf-8"></script>
   <script>
     $('#css a[href^="http://"]').favicons();
+    $('#css2 a[href^="http://"]').favicons({
+      'classname':'favicon2'
+    });
     $('#default0').favicons({
       'service': 'http://g.etfv.co/__URL__'
     });
