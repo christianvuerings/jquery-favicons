@@ -20,6 +20,7 @@ URL of the service you want to use.
 	
 ```javascript
 $('a').favicons().css('color', '#ff0000');
+```
 
 * Different services
 
