@@ -1,8 +1,8 @@
 # jQuery favicons plugin
 
-## About
-
 Add favicons to anchor elements on your page
+
+![Preview of the plugin](http://f.cl.ly/items/0Y3K3v1D3W2k0F412v0O/Screen%20shot%202011-04-29%20at%2015.32.16.png)
 
 ## Configuration
 
