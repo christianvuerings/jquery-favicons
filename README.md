@@ -20,7 +20,6 @@ URL of the service you want to use.
 	
 ```javascript
 $('a').favicons().css('color', '#ff0000');
-```
 
 * Different services
 
@@ -28,7 +27,7 @@ $('a').favicons().css('color', '#ff0000');
 $('a').favicons({
   'service': 'http://www.getfavicon.org/?url=__DOMAIN__'
 });
-	```
+```
 
 * Change default icon
 
@@ -36,7 +35,7 @@ $('a').favicons({
 $('a').favicons({
   'service': 'http://g.etfv.co/__URL__?defaulticon=http://www.google.com/favicon.ico'
 });
-	```
+```
 
 ## Inspiration
 [http://andreaslagerkvist.com/jquery/favicons/](http://andreaslagerkvist.com/jquery/favicons/)
