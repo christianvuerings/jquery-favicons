@@ -12,13 +12,13 @@ Feel free to check out the [examples](http://christianv.github.com/jquery-favico
 ## Usage
 
 ```html
-<script src="https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.min.js"></script> 
-<script> 
+<script src="https://cdn.rawgit.com/christianv/jquery-favicons/gh-pages/jquery.favicons.min.js"></script>
+<script>
   $('a[href^="http://"]').favicons();
 </script>
 ```
 
-You can download the [complete](https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.js) or [minified](https://github.com/christianv/jquery-favicons/raw/master/jquery.favicons.min.js) version of the script locally.  
+You can download the [complete](https://raw.githubusercontent.com/christianv/jquery-favicons/gh-pages/jquery.favicons.js) or [minified](https://raw.githubusercontent.com/christianv/jquery-favicons/gh-pages/jquery.favicons.min.js) version of the script locally.
 You're also able to change the jQuery selector `a[href^="http://"]` to whatever you want.
 
 
@@ -33,13 +33,11 @@ $('a').favicons({
 });
 ```
 
-* `classname`: Name of the CSS class  
-(default: "favicon")
+* `classname`: Name of the CSS class (default: "favicon")
 
-* `service`: URL of the service you want to use.  
-(default: "http://g.etfv.co/\_\_URL\_\_")  
-`__URL__` will be replaced by the complete URL.  
-`__DOMAIN__` will be replaced by the domain, which is the URL without `http://` or `https://`.  
+* `service`: URL of the service you want to use. (default: "http://g.etfv.co/\_\_URL\_\_")
+  * `__URL__` will be replaced by the complete URL.
+  * `__DOMAIN__` will be replaced by the domain, which is the URL without `http://` or `https://`.
 
 ## Features
 * Chainable
